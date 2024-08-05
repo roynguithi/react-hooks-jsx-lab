@@ -1,9 +1,14 @@
 import React from "react";
-import { name, city } from "../data/data.js";
+import { username, city } from "../data/data.js"; // Adjust the import path as needed
 
 function Home() {
-  // update the JSX being returned!
-  return <div>Home</div>;
+  return (
+    <div id="home">
+      <h1 style={{ color: "firebrick" }}>
+        {username} is a Web Developer from {city}
+      </h1>
+    </div>
+  );
 }
-
 export default Home;
+export{username,city};
